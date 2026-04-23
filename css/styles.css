@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+.poster-container {
+    background-color: #fff;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+}
+
+
+.top-section {
+    padding: 40px 40px 30px 40px;
+    color: #000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: clamp(40px, 10vw, 100px);
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -2px;
+}
+
+.arrow-icon {
+    font-size: clamp(30px, 6vw, 70px);
+}
+
+
+.sub-text {
+    display: flex;
+    gap: 10px;
+    max-width: 900px;
+}
+
+.asterisk {
+    font-size: 20px;
+}
+
+.sub-text p {
+    font-size: 11px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.date-range {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.link-section {
+    background-color: #000; 
+    padding: 20px 0;
+}
+
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    border-bottom: 1px solid #333;
+}
+
+.project-list li:last-child {
+    border-bottom: none;
+}
+
+.project-list a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 40px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.project-list a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+@media (max-width: 600px) {
+    .top-section {
+        padding: 20px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .date-range {
+        text-align: left;
+    }
+    .project-list a {
+        padding: 20px;
+        font-size: 14px;
+        word-break: break-all;
+    }
+}
